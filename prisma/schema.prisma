@@ -22,4 +22,6 @@ model User {
   email    String @unique
   password String
   name     String
+  role     String  @default("user") // Default role is 'user'
+  verified  Boolean  @default(false) // Add this line
 }
